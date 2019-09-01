@@ -1,0 +1,20 @@
+##安装底部导航栏组件
+npm install react-native-tab-navigator --save
+
+##安装路由支持
+npm install react-native-router-flux --save
+
+##安装轮播组件
+npm i react-native-swiper --save
+
+##安装星星图标
+npm install react-native-star-rating
+
+##安装字体
+yarn add react-native-vector-icons
+
+##安装顶部滚动导航栏
+npm install react-native-scrollable-tab-view --save
+
+##安装定位
+npm install react-native-smart-amap-location

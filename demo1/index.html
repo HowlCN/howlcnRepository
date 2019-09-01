@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./jquery-3.3.1.min.js"></script>
+    <title>旋转文字</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255, 174, 0);
+            color: aliceblue;
+            overflow: hidden;
+        }
+
+        .rotate {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 20px;
+            width: 10px;
+            height: 10px;
+            margin: 0;
+            font-weight: 700;
+            color: #fff;
+            z-index: 3;
+            animation-name: rotateAnimate;
+            animation-timing-function: linear;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+
+        .rotate>p {
+            -moz-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+            -ms-transform-origin: 100% 50%;
+            -webkit-transform-origin: 100% 50%;
+            -moz-transition: -moz-transform 2s cubic-bezier(.445, .05, .55, .95);
+            -ms-transition: -ms-transform 2s cubic-bezier(.445, .05, .55, .95);
+            transition: transform 2s cubic-bezier(.445, .05, .55, .95);
+            -webkit-transition: -webkit-transform 2s cubic-bezier(.445, .05, .55, .95);
+            transform:  rotate(0deg) scale(0);
+            width: 198px;
+            height: 48px;
+            position: absolute;
+            left: -192px;
+            top: -24px
+        }
+
+        .rotate>p>span {
+            display: block;
+            width: 48px;
+            height: 48px;
+            -webkit-transform: rotate(-97deg);
+            -moz-transform: rotate(-97deg);
+            -ms-transform: rotate(-97deg);
+            transform: rotate(-97deg);
+            font-size: 30px;
+            text-align: center;
+        }
+
+        @keyframes rotateAnimate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rotate">
+        <p><span>A</span></p>
+        <p><span>B</span></p>
+        <p><span>C</span></p>
+        <p><span>D</span></p>
+        <p><span>E</span></p>
+        <p><span>F</span></p>
+        <p><span>G</span></p>
+        <p><span>H</span></p>
+        <p><span>I</span></p>
+        <p><span>J</span></p>
+        <p><span>K</span></p>
+        <p><span>L</span></p>
+        <p><span>M</span></p>
+        <p><span>N</span></p>
+        <p><span>O</span></p>
+        <p><span>P</span></p>
+        <p><span>Q</span></p>
+        <p><span>R</span></p>
+        <p><span>S</span></p>
+        <p><span>D</span></p>
+        <p><span>U</span></p>
+        <p><span>V</span></p>
+        <p><span>W</span></p>
+        <p><span>X</span></p>
+        <p><span>Y</span></p>
+        <p><span>Z</span></p>
+        <p><span>A</span></p>
+        <p><span>B</span></p>
+        <p><span>C</span></p>
+        <p><span>D</span></p>
+        <p><span>E</span></p>
+        <p><span>F</span></p>
+        <p><span>G</span></p>
+        <p><span>H</span></p>
+        <p><span>I</span></p>
+        <p><span>J</span></p>
+        <p><span>K</span></p>
+        <p><span>L</span></p>
+        <p><span>M</span></p>
+        <p><span>N</span></p>
+        <p><span>O</span></p>
+        <p><span>P</span></p>
+        <p><span>Q</span></p>
+        <p><span>R</span></p>
+        <p><span>S</span></p>
+        <p><span>D</span></p>
+        <p><span>U</span></p>
+        <p><span>V</span></p>
+        <p><span>W</span></p>
+        <p><span>X</span></p>
+        <p><span>Y</span></p>
+        <p><span>Z</span></p>
+        <p><span>A</span></p>
+        <p><span>B</span></p>
+        <p><span>C</span></p>
+        <p><span>D</span></p>
+        <p><span>E</span></p>
+        <p><span>F</span></p>
+        <p><span>G</span></p>
+        <p><span>H</span></p>
+        <p><span>I</span></p>
+        <p><span>J</span></p>
+        <p><span>K</span></p>
+        <p><span>L</span></p>
+        <p><span>M</span></p>
+        <p><span>N</span></p>
+        <p><span>O</span></p>
+        <p><span>P</span></p>
+        <p><span>Q</span></p>
+        <p><span>R</span></p>
+        <p><span>S</span></p>
+        <p><span>D</span></p>
+        <p><span>U</span></p>
+        <p><span>V</span></p>
+        <p><span>W</span></p>
+        <p><span>X</span></p>
+        <p><span>Y</span></p>
+        <p><span>Z</span></p>
+        <p><span>A</span></p>
+        <p><span>B</span></p>
+        <p><span>C</span></p>
+        <p><span>D</span></p>
+        <p><span>E</span></p>
+        <p><span>F</span></p>
+        <p><span>G</span></p>
+        <p><span>H</span></p>
+        <p><span>I</span></p>
+        <p><span>J</span></p>
+        <p><span>K</span></p>
+        <p><span>L</span></p>
+        <p><span>M</span></p>
+        <p><span>N</span></p>
+        <p><span>O</span></p>
+        <p><span>P</span></p>
+        <p><span>Q</span></p>
+        <p><span>R</span></p>
+        <p><span>S</span></p>
+        <p><span>D</span></p>
+        <p><span>U</span></p>
+        <p><span>V</span></p>
+        <p><span>W</span></p>
+        <p><span>X</span></p>
+        <p><span>Y</span></p>
+        <p><span>Z</span></p>
+        <p><span>A</span></p>
+        <p><span>B</span></p>
+        <p><span>C</span></p>
+        <p><span>D</span></p>
+        <p><span>E</span></p>
+        <p><span>F</span></p>
+        <p><span>G</span></p>
+        <p><span>H</span></p>
+        <p><span>I</span></p>
+        <p><span>J</span></p>
+        <p><span>K</span></p>
+        <p><span>L</span></p>
+        <p><span>M</span></p>
+        <p><span>N</span></p>
+        <p><span>O</span></p>
+        <p><span>P</span></p>
+        <p><span>Q</span></p>
+        <p><span>R</span></p>
+        <p><span>S</span></p>
+        <p><span>D</span></p>
+        <p><span>U</span></p>
+        <p><span>V</span></p>
+        <p><span>W</span></p>
+        <p><span>X</span></p>
+        <p><span>Y</span></p>
+        <p><span>Z</span></p>
+        <p><span>A</span></p>
+        <p><span>B</span></p>
+        <p><span>C</span></p>
+        <p><span>D</span></p>
+        <p><span>E</span></p>
+        <p><span>F</span></p>
+        <p><span>G</span></p>
+        <p><span>H</span></p>
+        <p><span>I</span></p>
+        <p><span>J</span></p>
+        <p><span>K</span></p>
+        <p><span>L</span></p>
+        <p><span>M</span></p>
+        <p><span>N</span></p>
+        <p><span>O</span></p>
+        <p><span>P</span></p>
+        <p><span>Q</span></p>
+        <p><span>R</span></p>
+        <p><span>S</span></p>
+        <p><span>D</span></p>
+        <p><span>U</span></p>
+        <p><span>V</span></p>
+        <p><span>W</span></p>
+        <p><span>X</span></p>
+        <p><span>Y</span></p>
+        <p><span>Z</span></p>
+        <p><span>A</span></p>
+        <p><span>B</span></p>
+        <p><span>C</span></p>
+        <p><span>D</span></p>
+        <p><span>E</span></p>
+        <p><span>F</span></p>
+        <p><span>G</span></p>
+        <p><span>H</span></p>
+        <p><span>I</span></p>
+        <p><span>J</span></p>
+        <p><span>K</span></p>
+        <p><span>L</span></p>
+        <p><span>M</span></p>
+        <p><span>N</span></p>
+        <p><span>O</span></p>
+        <p><span>P</span></p>
+        <p><span>Q</span></p>
+        <p><span>R</span></p>
+        <p><span>S</span></p>
+        <p><span>D</span></p>
+        <p><span>U</span></p>
+        <p><span>V</span></p>
+        <p><span>W</span></p>
+        <p><span>X</span></p>
+        <p><span>Y</span></p>
+        <p><span>Z</span></p>
+        <p><span>A</span></p>
+        <p><span>B</span></p>
+        <p><span>C</span></p>
+        <p><span>D</span></p>
+        <p><span>E</span></p>
+        <p><span>F</span></p>
+        <p><span>G</span></p>
+        <p><span>H</span></p>
+        <p><span>I</span></p>
+        <p><span>J</span></p>
+        <p><span>K</span></p>
+        <p><span>L</span></p>
+        <p><span>M</span></p>
+        <p><span>N</span></p>
+        <p><span>O</span></p>
+        <p><span>P</span></p>
+        <p><span>Q</span></p>
+        <p><span>R</span></p>
+        <p><span>S</span></p>
+        <p><span>D</span></p>
+        <p><span>U</span></p>
+        <p><span>V</span></p>
+        <p><span>W</span></p>
+        <p><span>X</span></p>
+        <p><span>Y</span></p>
+        <p><span>Z</span></p>
+        <p><span>A</span></p>
+        <p><span>B</span></p>
+        <p><span>C</span></p>
+        <p><span>D</span></p>
+        <p><span>E</span></p>
+        <p><span>F</span></p>
+        <p><span>G</span></p>
+        <p><span>H</span></p>
+        <p><span>I</span></p>
+        <p><span>J</span></p>
+        <p><span>K</span></p>
+        <p><span>L</span></p>
+        <p><span>M</span></p>
+        <p><span>N</span></p>
+        <p><span>O</span></p>
+        <p><span>P</span></p>
+        <p><span>Q</span></p>
+        <p><span>R</span></p>
+        <p><span>S</span></p>
+        <p><span>D</span></p>
+        <p><span>U</span></p>
+        <p><span>V</span></p>
+        <p><span>W</span></p>
+        <p><span>X</span></p>
+        <p><span>Y</span></p>
+        <p><span>Z</span></p>
+
+    </div>
+    <script>
+        $(function () {
+            $ps = $('.rotate > p')
+            $ps.each(function(idx){
+                var rotate = idx<$ps.length/2?-($ps.length/2-idx)*9:-($ps.length/2-idx)*9;
+                //让文字距离中心的非线性增加，改为二次增加
+                $(this).css({transform: 'rotate('+rotate+'deg) scale('+idx*idx*0.0001+')'})
+            })
+        })    
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./lib/jquery-3.3.1.min.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        #container {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #press {
+            width: 30px;
+            height: 30px;
+            display: none;
+            background: url('./lib/press.png') no-repeat center center;
+            background-size: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 999;
+        }
+        .msg {
+            width: 120px;
+            height: 26px;
+            background-color: #000;
+            border-radius: 13px;
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            right: -125px;
+        }
+
+        .rain-man {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            pointer-events: none;
+        }
+
+        .rain-man img {
+            width: 100%;
+            height: 100%;
+        }
+
+        [data-z='0'] {
+            width: 66px;
+            height: 111px;
+            position: absolute;
+        }
+
+        [data-z='1'] {
+            width: 88px;
+            height: 148px;
+            position: absolute;
+        }
+
+        [data-z='2'] {
+            width: 110px;
+            height: 185px;
+            position: absolute;
+        }
+
+        [data-z='3'] {
+            width: 132px;
+            height: 222px;
+            position: absolute;
+        }
+
+        [data-z='4'] {
+            width: 154px;
+            height: 259px;
+            position: absolute;
+        }
+
+        [data-z='5'] {
+            width: 176px;
+            height: 296px;
+            position: absolute;
+        }
+
+        [data-z='6'] {
+            width: 198px;
+            height: 333px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="press">
+            <div class="msg">press & move</div>
+        </div>
+        <div class="rain-man">
+            <!-- 66 -->
+            <div class="man-item" data-z=0><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=0><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=0><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=0><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=0><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=0><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=0><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=0><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=0><img src="./lib/rain.png"></div>
+            <!-- 88 -->
+            <div class="man-item" data-z=1><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=1><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=1><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=1><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=1><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=1><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=1><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=1><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=1><img src="./lib/rain.png"></div>
+            <!-- 110 -->
+            <div class="man-item" data-z=2><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=2><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=2><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=2><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=2><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=2><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=2><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=2><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=2><img src="./lib/rain.png"></div>
+            <!-- 132 -->
+            <div class="man-item" data-z=3><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=3><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=3><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=3><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=3><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=3><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=3><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=3><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=3><img src="./lib/rain.png"></div>
+            <!-- 154 -->
+            <div class="man-item" data-z=4><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=4><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=4><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=4><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=4><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=4><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=4><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=4><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=4><img src="./lib/rain.png"></div>
+            <!-- 176 -->
+            <div class="man-item" data-z=5><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=5><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=5><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=5><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=5><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=5><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=5><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=5><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=5><img src="./lib/rain.png"></div>
+            <!-- 198 -->
+            <div class="man-item" data-z=6><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=6><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=6><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=6><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=6><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=6><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=6><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=6><img src="./lib/rain.png"></div>
+            <div class="man-item" data-z=6><img src="./lib/rain.png"></div>
+        </div>
+    </div>
+
+
+    <script src="./lib/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>生长树</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        #press {
+            width: 30px;
+            height: 30px;
+            background: url('./lib/press.png') no-repeat center center;
+            background-size: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .msg {
+            width: 60px;
+            height: 26px;
+            background-color: #000;
+            border-radius: 13px;
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            right: -65px;
+        }
+
+        #grass {
+            width: 100%;
+            height: 90px;
+            position: fixed;
+            bottom: -50px;
+            left: 0;
+            background: url('./lib/plants.png') repeat-x;
+            background-position: 0px 0px;
+        }
+
+        #mode {
+            width: 69px;
+            height: 69px;
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            background: url('./lib/plants-mode.png') no-repeat;
+            background-size: cover;
+            background-position: 0px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="press">
+        <div class="msg">press</div>
+    </div>
+    <div id="mode"></div>
+    <div id="grass"></div>
+    <script src="./lib/index.js"></script>
+</body>
+
+</html>

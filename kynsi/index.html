@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kynsi</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/icon.png">
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery.easing.1.3.js"></script>
+    <script src="./js/jquery.mousewheel.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <div id="loading">
+        <div class="loading-icon">
+            <img src="./images/loading.gif">
+            <span class="progress">0%</span>
+        </div>
+    </div>
+    <div id="container">
+        <div id="mouse"></div>
+        <img class="bgImg floor-0" src="./images/bck.png">
+        <div class="side side-0 floor-1">
+            <div class="bottom" style="z-index: 1"><img class="rock-1" src="./images/1.png"></div>
+            <div class=" floor-2" style="z-index: 2"><img class="rock-2" src="./images/2.png"></div>
+            <div class=" floor-3" style="z-index: 3">
+                <h1>
+                    Love<br />
+                    rules his kingdom<br />
+                    without a sword<br />
+                </h1>
+            </div>
+            <div class=" floor-4" style="z-index: 3"><img class="rock-3" src="./images/3.png"></div>
+            <div class=" floor-5" style="z-index: 4"><img class="rock-4" src="./images/4.png"></div>
+        </div>
+        <div class="side side-1 floor-1">
+            <div class="bottom" style="z-index: 1"><img class="bcode-1" src="./images/bcode-pic.png"></div>
+            <div class="floor-2" style="z-index: 2"></div>
+            <div class="floor-3" style="z-index: 3">
+                <h1>
+                    You may be too cunning for one<br />
+                    but not for all
+                </h1>
+            </div>
+            <div class="floor-4" style="z-index: 4"><img class="bcode-2" src="./images/bcode_logo.png"></div>
+        </div>
+        <div class="side side-2 floor-1">
+            <div class="bottom" style="z-index: 1"><img class="cat-1" src="./images/stones-back.png"></div>
+            <div class="floor-2" style="z-index: 2"><img class="cat-2" src="./images/cat.png"></div>
+            <div class="floor-3" style="z-index: 2">
+                <h1>
+                    Something attempted<br />
+                    something done
+                </h1>
+            </div>
+            <div class="floor-4" style="z-index: 3;position: relative;">
+                <img class="cat-3" style="z-index: 2" src="./images/stones-front.png">
+                <img class="cat-4" src="./images/dt-logo.png">
+            </div>
+            <div class="floor-5" style="z-index: 4"><img class="cat-5" src="./images/stones-blurred.png"></div>
+        </div>
+        <div class="side side-3 floor-1">
+            <div class="bottom" style="z-index: 1"><img class="cyan-1" src="./images/cryingCyan.png"></div>
+            <div class="floor-2" style="z-index: 2"></div>
+            <div class="floor-3" style="z-index: 3">
+                <h1>
+                    Truth & roses<br />
+                    have thorns about them.
+                </h1>
+            </div>
+            <div class="floor-4" style="z-index: 4"><img class="cyan-2" src="./images/kynsiLogo.png"></div>
+        </div>
+        <div class="side side-4 floor-1">
+            <div class="bottom" style="z-index: 1"><img class="layer-1" src="./images/kis-layer4.png"></div>
+            <div class="floor-2" style="z-index: 2"><img class="layer-2" src="./images/kis-layer3.png"></div>
+            <div class="floor-3" style="z-index: 3">
+                <h1>
+                    Confidence<br />
+                    a plant of slow growth
+                </h1>
+            </div>
+            <div class="floor-4" style="z-index: 4"><img class="layer-3" src="./images/kis-layer2.png"></div>
+            <div class="floor-5" style="z-index: 5"><img class="layer-4" src="./images/kis-layer1_800.png"></div>
+        </div>
+        <div class="side side-5 floor-1">
+            <div class="bottom" style="z-index: 1"> <img class="man-1 " src="./images/l-1.png"></div>
+            <div class="floor-2" style="z-index: 2"><img class="man-2 " src="./images/man.png"></div>
+            <div class="floor-3" style="z-index: 2">
+                <h1>
+                    Don't hesitate.<br>
+                    Just to do
+                </h1>
+            </div>
+            <div class="floor-4" style="z-index: 2"><img class="man-3 " src="./images/l0.png"></div>
+            <div class="floor-5" style="z-index: 3"><img class="man-4 " src="./images/l1.png"></div>
+            <div class="floor-6" style="z-index: 4"><img class="man-5 " src="./images/logo.png"></div>
+            <div class="floor-7" style="z-index: 5"><img class="man-6 " src="./images/big_r_speckle.png"></div>
+            <div class="floor-8" style="z-index: 6"><img class="man-7 " src="./images/big_y_speckle.png"></div>
+        </div>
+
+    </div>
+    <div id="operate">
+        <div class="controller pre">
+            <img src="./images/arrow_left.png">
+        </div>
+        <div class="controller next">
+            <img src="./images/arrow_right.png">
+        </div>
+        <div class="nav">
+            <div class="nav-item">
+                <div class="nav-inner"> home <a href="javascript:;" class="bottom-line"></a></div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-inner">detail <a href="javascript:;" class="bottom-line"></a></div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-inner">twitter <a href="javascript:;" class="bottom-line"></a></div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-inner">xxx@163.com <a href="javascript:;" class="bottom-line"></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
